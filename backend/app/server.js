@@ -22,13 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000", 
-      "https://cv.libproject.xyz",
-      "http://localhost",
-      "http://127.0.0.1",
-      "https://127.0.0.1"
-    ],
+    origin: "https://elcvdelib-backend.fly.dev",
     credentials: true,
     optionsSuccessStatus: 200
   })
